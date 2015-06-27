@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
+ * icont Bootstrap - Freelancer Bootstrap Theme (http://icontbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
@@ -36,8 +36,28 @@ h6 {
     font-weight: 700;
 }
 
-hr.star-light,
-hr.star-primary {
+hr.icon-star:after {
+    content: "\f006";
+}
+
+hr.icon-grad:after {
+    content: "\f19d";
+}
+
+hr.icon-laptop:after {
+    content: "\f109";
+}
+
+hr.icon-me:after {
+    content: "\f183";
+}
+
+hr.icon-env:after {
+    content: "\f0e0";
+}
+
+hr.icon-light,
+hr.icon-primary {
     margin: 25px auto 30px;
     padding: 0;
     max-width: 250px;
@@ -46,9 +66,8 @@ hr.star-primary {
     text-align: center;
 }
 
-hr.star-light:after,
-hr.star-primary:after {
-    content: "\f006";
+hr.icon-light:after,
+hr.icon-primary:after {
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -57,20 +76,20 @@ hr.star-primary:after {
     font-size: 2em;
 }
 
-hr.star-light {
+hr.icon-light {
     border-color: #fff;
 }
 
-hr.star-light:after {
+hr.icon-light:after {
     color: #fff;
     background-color: #18bc9c;
 }
 
-hr.star-primary {
+hr.icon-primary {
     border-color: #2c3e50;
 }
 
-hr.star-primary:after {
+hr.icon-primary:after {
     color: #2c3e50;
     background-color: #fff;
 }
@@ -260,6 +279,10 @@ section.success a.active {
     }
 }
 
+.btn {
+    border-color: #fff; 
+}
+
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
@@ -274,7 +297,7 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #fff;
     background: #fff;
 }
 
@@ -282,7 +305,7 @@ section.success a.active {
     position: relative;
     margin-bottom: 0;
     padding-bottom: .5em;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #fff;
 }
 
 .floating-label-form-group input,
@@ -318,7 +341,7 @@ section.success a.active {
 
 .floating-label-form-group::not(:first-child) {
     padding-left: 14px;
-    border-left: 1px solid #eee;
+    border-left: 1px solid #fff;
 }
 
 .floating-label-form-group-with-value label {
@@ -327,11 +350,20 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #fff;
 }
 
+.form-control {
+    color: #fff;
+}
+
+.white-placeholder::-webkit-input-placeholder { color: white; }
+.white-placeholder:-moz-placeholder { color: white; }
+.white-placeholder::-moz-placeholder { color: white; }
+.white-placeholder:-ms-input-placeholder { color: white; }
+
 form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #fff;
 }
 
 footer {
@@ -394,68 +426,8 @@ footer .footer-below {
     outline: 0;
 }
 
-.portfolio-modal .modal-content {
-    padding: 100px 0;
-    min-height: 100%;
-    border: 0;
-    border-radius: 0;
-    text-align: center;
-    background-clip: border-box;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.portfolio-modal .modal-content h2 {
-    margin: 0;
-    font-size: 3em;
-}
-
-.portfolio-modal .modal-content img {
-    margin-bottom: 30px;
-}
-
-.portfolio-modal .modal-content .item-details {
+.item-details {
     margin: 30px 0;
-}
-
-.portfolio-modal .close-modal {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.portfolio-modal .close-modal:hover {
-    opacity: .3;
-}
-
-.portfolio-modal .close-modal .lr {
-    z-index: 1051;
-    width: 1px;
-    height: 75px;
-    margin-left: 35px;
-    background-color: #2c3e50;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.portfolio-modal .close-modal .lr .rl {
-    z-index: 1052;
-    width: 1px;
-    height: 75px;
-    background-color: #2c3e50;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-.portfolio-modal .modal-backdrop {
-    display: none;
-    opacity: 0;
 }
 
 .technology-image {
