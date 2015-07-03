@@ -444,13 +444,22 @@ footer .footer-below {
 }
 
 .tile {
-    height: 64px;
-    display: inline-block;
-    margin: 0px 10px;
+    height: auto;
+    width: auto;
+    max-height: 64px;
 }
 
 .tiles-label {
-    float: left;
-    display: inline-block;
-    margin-top: 15px;
+    text-align: center;
+}
+
+@media(max-width: 380px) {
+    .navbar-brand {
+        padding: 19.5px 0px;
+    }
+
+    .navbar-toggle {
+        margin-right: 0px;
+        padding: 9px 5px;
+    }
 }
