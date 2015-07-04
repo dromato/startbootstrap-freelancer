@@ -463,3 +463,15 @@ footer .footer-below {
         padding: 9px 5px;
     }
 }
+
+@media(min-width: 768px) {
+    .container {
+        width: 800px;
+    }   
+}
+
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
